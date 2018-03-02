@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3dV-X6-q5G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TNT-bA-LyE">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="298.125" y="118.30985915492958"/>
         </scene>
-        <!--View Controller-->
+        <!--registerViewController-->
         <scene sceneID="Pyb-vF-507">
             <objects>
-                <viewController id="TNT-bA-LyE" sceneMemberID="viewController">
+                <viewController title="registerViewController" id="TNT-bA-LyE" customClass="RegisterPageViewController" customModule="fleetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LvW-GB-gar">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,20 +102,32 @@
                                 <color key="backgroundColor" red="1" green="0.61844011210000005" blue="0.1618752111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="RegisterButtonTapped:" destination="TNT-bA-LyE" eventType="touchUpInside" id="YSp-TB-olS"/>
+                                    <action selector="registerButtonTapped:" destination="TNT-bA-LyE" eventType="touchUpInside" id="mju-4k-YYu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGT-0i-Z6T">
                                 <rect key="frame" x="50" y="389" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="already have an account?"/>
+                                <connections>
+                                    <segue destination="EfW-6r-RBn" kind="presentation" id="OpI-3f-erS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uqe-Sj-930"/>
                     </view>
+                    <connections>
+                        <outlet property="RepeatPassTextField" destination="0bS-Mq-3AK" id="poe-8s-ISb"/>
+                        <outlet property="UserEmailTextField" destination="XME-zw-R08" id="8Ij-Cd-ZFE"/>
+                        <outlet property="UserPassTextField" destination="ljn-Ca-cBl" id="bPH-tX-8dT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jyE-f8-mBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316.875" y="856.69014084507046"/>
+            <point key="canvasLocation" x="1759" y="116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PBA-Cr-ylS">
@@ -167,16 +179,6 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Login"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-3e-vbS">
-                                <rect key="frame" x="115" y="308" width="90" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.61844011206809268" blue="0.16187521114688386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Register"/>
-                                <connections>
-                                    <segue destination="TNT-bA-LyE" kind="presentation" identifier="RegisterView" id="rOk-mr-Qak"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnW-VP-Ut7">
                                 <rect key="frame" x="139" y="279" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -184,6 +186,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-3e-vbS">
+                                <rect key="frame" x="97" y="308" width="126" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.61844011206809268" blue="0.16187521114688386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Register Page"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XQx-VX-hIZ"/>
@@ -191,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bp9-qD-dpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="118"/>
+            <point key="canvasLocation" x="1023.75" y="116.19718309859155"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vXz-yn-wo3">
@@ -213,4 +222,7 @@
             <point key="canvasLocation" x="-384" y="118"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OpI-3f-erS"/>
+    </inferredMetricsTieBreakers>
 </document>
