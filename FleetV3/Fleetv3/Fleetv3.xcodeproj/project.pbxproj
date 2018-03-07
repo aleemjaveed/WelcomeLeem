@@ -18,6 +18,7 @@
 		4B3358E3204F98FD0022E1D7 /* F0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4B3358E2204F98FD0022E1D7 /* F0.jpeg */; };
 		4B3358E520503CA80022E1D7 /* F01.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B3358E420503CA80022E1D7 /* F01.png */; };
 		4B3358FA2050504A0022E1D7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3358F82050504A0022E1D7 /* SWRevealViewController.m */; };
+		4B7629602050AC3B007D173A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76295F2050AC3B007D173A /* ShopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4B3358F82050504A0022E1D7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4B3358F92050504A0022E1D7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4B3358FB205050660022E1D7 /* Fleetv3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fleetv3-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B76295F2050AC3B007D173A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				4B3358AF204F01D70022E1D7 /* AppDelegate.swift */,
 				4B3358B1204F01D70022E1D7 /* ViewController.swift */,
 				4B3358B3204F01D80022E1D7 /* Main.storyboard */,
+				4B76295F2050AC3B007D173A /* ShopViewController.swift */,
 				4B3358F92050504A0022E1D7 /* SWRevealViewController.h */,
 				4B3358FB205050660022E1D7 /* Fleetv3-Bridging-Header.h */,
 				4B3358F82050504A0022E1D7 /* SWRevealViewController.m */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7629602050AC3B007D173A /* ShopViewController.swift in Sources */,
 				4B3358B2204F01D70022E1D7 /* ViewController.swift in Sources */,
 				4B3358B0204F01D70022E1D7 /* AppDelegate.swift in Sources */,
 				4B3358FA2050504A0022E1D7 /* SWRevealViewController.m in Sources */,

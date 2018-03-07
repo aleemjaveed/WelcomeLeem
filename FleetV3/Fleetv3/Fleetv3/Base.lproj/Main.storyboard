@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1041" y="-717"/>
         </scene>
-        <!--View Controller-->
+        <!--Shop View Controller-->
         <scene sceneID="Iie-cC-49l">
             <objects>
-                <viewController id="3E2-hj-xRh" sceneMemberID="viewController">
+                <viewController id="3E2-hj-xRh" customClass="ShopViewController" customModule="Fleetv3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ezr-rL-Maz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +186,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3E2-hj-xRh" id="AGa-yH-f7i"/>
+                                    <outlet property="delegate" destination="3E2-hj-xRh" id="KMM-5j-2tl"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -203,6 +207,9 @@
                     <navigationItem key="navigationItem" id="xEC-ao-LXq">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="fni-ub-8aZ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="fni-ub-8aZ" id="l6y-hw-ZcM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vjc-Xr-dLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -473,6 +480,6 @@
         <image name="F1.jpeg" width="900" height="1600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kZ2-4k-kVP"/>
+        <segue reference="fNp-Vx-yMu"/>
     </inferredMetricsTieBreakers>
 </document>
