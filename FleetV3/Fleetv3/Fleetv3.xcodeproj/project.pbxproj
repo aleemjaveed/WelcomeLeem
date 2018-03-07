@@ -56,7 +56,7 @@
 		4B3358E420503CA80022E1D7 /* F01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = F01.png; path = "../../../../UniWork/G53IDS/Draft Designs/F01.png"; sourceTree = "<group>"; };
 		4B3358F82050504A0022E1D7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4B3358F92050504A0022E1D7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		4B3358FB205050660022E1D7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		4B3358FB205050660022E1D7 /* Fleetv3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fleetv3-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 				4B3358B1204F01D70022E1D7 /* ViewController.swift */,
 				4B3358B3204F01D80022E1D7 /* Main.storyboard */,
 				4B3358F92050504A0022E1D7 /* SWRevealViewController.h */,
-				4B3358FB205050660022E1D7 /* Bridging-Header.h */,
+				4B3358FB205050660022E1D7 /* Fleetv3-Bridging-Header.h */,
 				4B3358F82050504A0022E1D7 /* SWRevealViewController.m */,
 				4B3358B6204F01D80022E1D7 /* Assets.xcassets */,
 				4B3358E420503CA80022E1D7 /* F01.png */,
