@@ -1,0 +1,6 @@
+framework module Pods_Fleetv3Tests {
+  umbrella header "Pods-Fleetv3Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
