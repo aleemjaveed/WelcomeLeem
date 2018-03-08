@@ -21,6 +21,7 @@
 		4B7629602050AC3B007D173A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76295F2050AC3B007D173A /* ShopViewController.swift */; };
 		4B7629622050B026007D173A /* CustomerMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7629612050B026007D173A /* CustomerMenuTVC.swift */; };
 		4B7629642050B954007D173A /* ProductListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7629632050B954007D173A /* ProductListTVC.swift */; };
+		4B7629662050D9B5007D173A /* ProductInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7629652050D9B5007D173A /* ProductInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4B76295F2050AC3B007D173A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		4B7629612050B026007D173A /* CustomerMenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMenuTVC.swift; sourceTree = "<group>"; };
 		4B7629632050B954007D173A /* ProductListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTVC.swift; sourceTree = "<group>"; };
+		4B7629652050D9B5007D173A /* ProductInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				4B3358B8204F01D80022E1D7 /* LaunchScreen.storyboard */,
 				4B3358BB204F01D80022E1D7 /* Info.plist */,
 				4B7629632050B954007D173A /* ProductListTVC.swift */,
+				4B7629652050D9B5007D173A /* ProductInfoVC.swift */,
 			);
 			path = Fleetv3;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B7629602050AC3B007D173A /* ShopViewController.swift in Sources */,
+				4B7629662050D9B5007D173A /* ProductInfoVC.swift in Sources */,
 				4B3358B2204F01D70022E1D7 /* ViewController.swift in Sources */,
 				4B3358B0204F01D70022E1D7 /* AppDelegate.swift in Sources */,
 				4B7629642050B954007D173A /* ProductListTVC.swift in Sources */,
