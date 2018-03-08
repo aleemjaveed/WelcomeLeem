@@ -20,6 +20,7 @@
 		4B3358FA2050504A0022E1D7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3358F82050504A0022E1D7 /* SWRevealViewController.m */; };
 		4B7629602050AC3B007D173A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76295F2050AC3B007D173A /* ShopViewController.swift */; };
 		4B7629622050B026007D173A /* CustomerMenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7629612050B026007D173A /* CustomerMenuTVC.swift */; };
+		4B7629642050B954007D173A /* ProductListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7629632050B954007D173A /* ProductListTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		4B3358FB205050660022E1D7 /* Fleetv3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fleetv3-Bridging-Header.h"; sourceTree = "<group>"; };
 		4B76295F2050AC3B007D173A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		4B7629612050B026007D173A /* CustomerMenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMenuTVC.swift; sourceTree = "<group>"; };
+		4B7629632050B954007D173A /* ProductListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				4B3358DD204F8F570022E1D7 /* F1.jpeg */,
 				4B3358B8204F01D80022E1D7 /* LaunchScreen.storyboard */,
 				4B3358BB204F01D80022E1D7 /* Info.plist */,
+				4B7629632050B954007D173A /* ProductListTVC.swift */,
 			);
 			path = Fleetv3;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				4B7629602050AC3B007D173A /* ShopViewController.swift in Sources */,
 				4B3358B2204F01D70022E1D7 /* ViewController.swift in Sources */,
 				4B3358B0204F01D70022E1D7 /* AppDelegate.swift in Sources */,
+				4B7629642050B954007D173A /* ProductListTVC.swift in Sources */,
 				4B7629622050B026007D173A /* CustomerMenuTVC.swift in Sources */,
 				4B3358FA2050504A0022E1D7 /* SWRevealViewController.m in Sources */,
 			);
