@@ -234,14 +234,14 @@
             </objects>
             <point key="canvasLocation" x="1042" y="-18"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Customer MenuTVC-->
         <scene sceneID="P8X-gx-BxK">
             <objects>
-                <tableViewController id="TWy-zt-kaR" sceneMemberID="viewController">
+                <tableViewController id="TWy-zt-kaR" customClass="CustomerMenuTVC" customModule="Fleetv3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8MT-XK-M6N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.74509803921568629" green="0.70588235294117641" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="70" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Hla-wm-4ia">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
