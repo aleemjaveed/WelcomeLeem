@@ -28,6 +28,8 @@
 		4B7629662050D9B5007D173A /* ProductInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7629652050D9B5007D173A /* ProductInfoVC.swift */; };
 		4B7629682050E28F007D173A /* BasketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7629672050E28F007D173A /* BasketVC.swift */; };
 		4B76296B2050E37A007D173A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B76296A2050E37A007D173A /* MapKit.framework */; };
+		4BDF565120511352003C8047 /* Fbmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF565020511352003C8047 /* Fbmanager.swift */; };
+		4BDF5653205116A9003C8047 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF5652205116A9003C8047 /* LoginVC.swift */; };
 		762F203217F294AA11D861C5 /* Pods_Fleetv3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B8ECECF79149EEDA53E9EF /* Pods_Fleetv3.framework */; };
 		F7F1C57646EC59860F8CCFBD /* Pods_Fleetv3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7C6CE3E1AEB2C8CC8018C3 /* Pods_Fleetv3UITests.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,9 @@
 		4B7629652050D9B5007D173A /* ProductInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoVC.swift; sourceTree = "<group>"; };
 		4B7629672050E28F007D173A /* BasketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketVC.swift; sourceTree = "<group>"; };
 		4B76296A2050E37A007D173A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4BDF564F20510EB6003C8047 /* Fleetv3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fleetv3.entitlements; sourceTree = "<group>"; };
+		4BDF565020511352003C8047 /* Fbmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fbmanager.swift; sourceTree = "<group>"; };
+		4BDF5652205116A9003C8047 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5DE9E757393866DF16DCE91D /* Pods-Fleetv3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fleetv3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fleetv3/Pods-Fleetv3.debug.xcconfig"; sourceTree = "<group>"; };
 		AD149117C42542DA8908CBF9 /* Pods-Fleetv3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fleetv3UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fleetv3UITests/Pods-Fleetv3UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1DDE82F3EF26A550DDA32FF /* Pods-Fleetv3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fleetv3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fleetv3Tests/Pods-Fleetv3Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +148,7 @@
 		4B3358AE204F01D70022E1D7 /* Fleetv3 */ = {
 			isa = PBXGroup;
 			children = (
+				4BDF564F20510EB6003C8047 /* Fleetv3.entitlements */,
 				4B3358AF204F01D70022E1D7 /* AppDelegate.swift */,
 				4B3358B1204F01D70022E1D7 /* ViewController.swift */,
 				4B3358B3204F01D80022E1D7 /* Main.storyboard */,
@@ -163,6 +169,8 @@
 				4B7629672050E28F007D173A /* BasketVC.swift */,
 				4B6BE34F2050EFB700E5383C /* PayVC.swift */,
 				4B6BE3512050F5AF00E5383C /* OrderVC.swift */,
+				4BDF565020511352003C8047 /* Fbmanager.swift */,
+				4BDF5652205116A9003C8047 /* LoginVC.swift */,
 			);
 			path = Fleetv3;
 			sourceTree = "<group>";
@@ -288,6 +296,11 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					4B3358BF204F01D80022E1D7 = {
 						CreatedOnToolsVersion = 9.2;
@@ -423,11 +436,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Fleetv3/Pods-Fleetv3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -509,11 +534,13 @@
 			files = (
 				4B7629602050AC3B007D173A /* ShopViewController.swift in Sources */,
 				4B7629662050D9B5007D173A /* ProductInfoVC.swift in Sources */,
+				4BDF5653205116A9003C8047 /* LoginVC.swift in Sources */,
 				4B3358B2204F01D70022E1D7 /* ViewController.swift in Sources */,
 				4B3358B0204F01D70022E1D7 /* AppDelegate.swift in Sources */,
 				4B7629682050E28F007D173A /* BasketVC.swift in Sources */,
 				4B7629642050B954007D173A /* ProductListTVC.swift in Sources */,
 				4B7629622050B026007D173A /* CustomerMenuTVC.swift in Sources */,
+				4BDF565120511352003C8047 /* Fbmanager.swift in Sources */,
 				4B3358FA2050504A0022E1D7 /* SWRevealViewController.m in Sources */,
 				4B6BE3502050EFB700E5383C /* PayVC.swift in Sources */,
 				4B6BE3522050F5AF00E5383C /* OrderVC.swift in Sources */,
@@ -684,6 +711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Fleetv3/Fleetv3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V55PVKBZ2;
 				INFOPLIST_FILE = Fleetv3/Info.plist;
@@ -703,6 +731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Fleetv3/Fleetv3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V55PVKBZ2;
 				INFOPLIST_FILE = Fleetv3/Info.plist;

@@ -20,7 +20,7 @@
         <!--ModernVC-->
         <scene sceneID="u2F-pQ-jJI">
             <objects>
-                <viewController id="Jwo-do-yAh" userLabel="ModernVC" sceneMemberID="viewController">
+                <viewController id="Jwo-do-yAh" userLabel="ModernVC" customClass="LoginVC" customModule="Fleetv3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sqB-eQ-m07">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
                                             <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ZGI-qd-9mS" kind="showDetail" id="4Ow-0L-Jl6"/>
+                                            <action selector="FBLoginBtn:" destination="Jwo-do-yAh" eventType="touchUpInside" id="uw3-ht-Mgd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpb-je-odf">
@@ -112,6 +112,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Eh-Pe-Cj4"/>
                     </view>
+                    <connections>
+                        <segue destination="ZGI-qd-9mS" kind="showDetail" identifier="CustomerView" id="qMM-9L-o66"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQn-LJ-PQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
