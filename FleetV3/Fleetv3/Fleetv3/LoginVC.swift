@@ -31,7 +31,10 @@ class LoginVC: UIViewController {
                 (
                 result,error)in
                 if (error == nil) {
-                    self.login = true
+                    Fbmanager.getFBUserData(completionHandler: {
+                        self.login = true
+                        self.viewDidAppear(true)
+                        })
                 }
             })
         }

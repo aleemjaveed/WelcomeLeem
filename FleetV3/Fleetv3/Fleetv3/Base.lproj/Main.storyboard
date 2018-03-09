@@ -513,7 +513,7 @@
                                 <rect key="frame" x="0.0" y="264" width="375" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5aA-ur-9Jk">
-                                        <rect key="frame" x="15" y="0.0" width="345" height="2"/>
+                                        <rect key="frame" x="15" y="0.0" width="345" height="1"/>
                                         <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -522,7 +522,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="keL-SV-wsX">
-                                        <rect key="frame" x="15" y="57" width="345" height="2"/>
+                                        <rect key="frame" x="15" y="57" width="345" height="1"/>
                                         <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="3" id="mgZ-9K-bHa"/>
@@ -725,10 +725,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DYz-tI-uj1">
-                                <rect key="frame" x="0.0" y="517" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="409" width="375" height="208"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="eL2-7g-a2H"/>
+                                    <constraint firstAttribute="height" constant="208" id="eL2-7g-a2H"/>
                                 </constraints>
                                 <color key="separatorColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -783,21 +783,31 @@
                                 </connections>
                             </tableView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OsG-rN-tVu">
-                                <rect key="frame" x="0.0" y="64" width="375" height="445"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="zac-LV-pZk"/>
+                                </constraints>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-1N-3Ci">
+                                <rect key="frame" x="0.0" y="310" width="375" height="91"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OsG-rN-tVu" firstAttribute="leading" secondItem="DYz-tI-uj1" secondAttribute="leading" id="6ix-QB-dyv"/>
-                            <constraint firstItem="DYz-tI-uj1" firstAttribute="top" secondItem="OsG-rN-tVu" secondAttribute="bottom" constant="8" symbolic="YES" id="7zo-Vg-KCk"/>
-                            <constraint firstItem="OsG-rN-tVu" firstAttribute="top" secondItem="Ois-jB-a7k" secondAttribute="top" id="Aji-vf-Se2"/>
+                            <constraint firstItem="Et1-1N-3Ci" firstAttribute="trailing" secondItem="DYz-tI-uj1" secondAttribute="trailing" id="08P-FJ-2mx"/>
+                            <constraint firstItem="Et1-1N-3Ci" firstAttribute="top" secondItem="OsG-rN-tVu" secondAttribute="bottom" id="D8D-tj-hJB"/>
+                            <constraint firstItem="DYz-tI-uj1" firstAttribute="top" secondItem="Et1-1N-3Ci" secondAttribute="bottom" constant="8" symbolic="YES" id="ESh-cO-qvu"/>
                             <constraint firstItem="5Hc-Z1-Egg" firstAttribute="leading" secondItem="Ois-jB-a7k" secondAttribute="leading" id="M2A-0l-hOI"/>
                             <constraint firstItem="DYz-tI-uj1" firstAttribute="trailing" secondItem="Ois-jB-a7k" secondAttribute="trailing" id="NkB-0D-D57"/>
+                            <constraint firstItem="OsG-rN-tVu" firstAttribute="leading" secondItem="Ois-jB-a7k" secondAttribute="leading" id="bON-Io-JvG"/>
                             <constraint firstItem="5Hc-Z1-Egg" firstAttribute="bottom" secondItem="Ois-jB-a7k" secondAttribute="bottom" id="cEI-iH-1CT"/>
-                            <constraint firstItem="OsG-rN-tVu" firstAttribute="trailing" secondItem="DYz-tI-uj1" secondAttribute="trailing" id="dSl-wi-gbs"/>
                             <constraint firstItem="5Hc-Z1-Egg" firstAttribute="top" secondItem="DYz-tI-uj1" secondAttribute="bottom" id="fLP-h0-yXF"/>
                             <constraint firstItem="5Hc-Z1-Egg" firstAttribute="trailing" secondItem="Ois-jB-a7k" secondAttribute="trailing" id="oyq-OG-S0i"/>
                             <constraint firstItem="DYz-tI-uj1" firstAttribute="leading" secondItem="Ois-jB-a7k" secondAttribute="leading" id="rRP-Fq-6MX"/>
+                            <constraint firstItem="Et1-1N-3Ci" firstAttribute="leading" secondItem="DYz-tI-uj1" secondAttribute="leading" id="sUg-fJ-b7e"/>
+                            <constraint firstItem="OsG-rN-tVu" firstAttribute="top" secondItem="Ois-jB-a7k" secondAttribute="top" id="v6a-zN-TF1"/>
+                            <constraint firstItem="OsG-rN-tVu" firstAttribute="trailing" secondItem="Ois-jB-a7k" secondAttribute="trailing" id="zXl-aO-pbB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ois-jB-a7k"/>
                     </view>
@@ -1005,7 +1015,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.23137254900000001" green="0.35294117650000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="Jwo-do-yAh" kind="show" id="EZ5-QG-SF1"/>
+                                            <segue destination="Jwo-do-yAh" kind="show" identifier="customerLogout" id="EZ5-QG-SF1"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
