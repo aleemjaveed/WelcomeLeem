@@ -63,6 +63,9 @@
                                         <state key="normal" title="Use a different account">
                                             <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fbLogout:" destination="Jwo-do-yAh" eventType="touchUpInside" id="f06-Z6-gox"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="F01.png" translatesAutoresizingMaskIntoConstraints="NO" id="O8y-AZ-XYg">
                                         <rect key="frame" x="103.5" y="174" width="168" height="93"/>
@@ -113,7 +116,9 @@
                         <viewLayoutGuide key="safeArea" id="5Eh-Pe-Cj4"/>
                     </view>
                     <connections>
-                        <segue destination="ZGI-qd-9mS" kind="showDetail" identifier="CustomerView" id="qMM-9L-o66"/>
+                        <outlet property="btnLogin" destination="NZ5-46-wdV" id="lF3-vb-zE2"/>
+                        <outlet property="btnLogout" destination="Cpb-je-odf" id="HxZ-Mq-Aku"/>
+                        <segue destination="ZGI-qd-9mS" kind="showDetail" identifier="CustomerView" id="xHX-Eu-mHo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQn-LJ-PQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -841,7 +846,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOG-HM-NdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="-18"/>
+            <point key="canvasLocation" x="991" y="222"/>
         </scene>
         <!--Customer MenuTVC-->
         <scene sceneID="P8X-gx-BxK">
@@ -1026,6 +1031,10 @@
                             <outlet property="delegate" destination="TWy-zt-kaR" id="mZr-sV-6eb"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="namelabel" destination="gVD-vt-dIb" id="kb8-Jm-dDH"/>
+                        <outlet property="profilepicimg" destination="2Y0-WV-t4H" id="exI-vv-PKM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuS-RX-P2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1135,8 +1144,8 @@
         <image name="menuicon.png" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fNp-Vx-yMu"/>
+        <segue reference="kZ2-4k-kVP"/>
         <segue reference="XVv-ad-USt"/>
-        <segue reference="DR3-xi-fox"/>
+        <segue reference="Otv-C4-Fpj"/>
     </inferredMetricsTieBreakers>
 </document>

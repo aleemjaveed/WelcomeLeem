@@ -16,11 +16,12 @@ class Fbmanager {
     {
         if (FBSDKAccessToken.current() != nil)
         {
-            FBSDKGraphRequest(graphPath: "Leem", parameters: ["fields": "name, email, picture.type(normal)"]).start(completionHandler: {(connection,result,error) in
-                if ( error == nil) {
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, email, picture.type(normal)"]).start(completionHandler: {(connection,result,error) in
+                if ( error == nil)
+                {
                     let json = JSON(result!)
                     print(json)
-                    user.currentUser.setInfo(json:json)
+                    User.currentUser.setInfo(json:json)
                     completionHandler()
                 }
             })

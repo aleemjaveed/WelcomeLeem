@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  Fleetv3
 //
-//  Created by Aleem Javeed on 06/03/2018.
 //  Copyright © 2018 Aleem Javeed. All rights reserved.
 //
 

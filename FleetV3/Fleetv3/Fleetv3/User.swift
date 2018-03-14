@@ -2,22 +2,22 @@
 //  user.swift
 //  Fleetv3
 //
-//  Created by Aleem Javeed on 09/03/2018.
 //  Copyright © 2018 Aleem Javeed. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-class user
+class User
 {
     var name : String?
     var email : String?
     var pictureURL : String?
     
-    static let currentUser = user()
+    static let currentUser = User()
     
-    func setInfo(json: JSON){
+    func setInfo(json: JSON)
+    {
         self.name = json["name"].string
         self.email = json["email"].string
         
@@ -26,7 +26,7 @@ class user
         self.pictureURL = imageData?["url"]?.string
     }
     
-    func resetinfo()
+    func resetInfo()
     {
         self.name = nil
         self.email = nil
